@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+form{
+    width: max-content;
+    border-radius:40px ;
+}
+
+input[type='text'],input[type='password'], input[type='email']{
+    margin: 20px;
+    padding: 10px;
+    @apply w-full border my-1 py-1 px-3 rounded-lg;
+    border-radius: 50px;
+}
+
+button{
+    @apply bg-gray-300;
+}
+
+button.primary{
+    background-color: #30d5c8;
+    @apply bg-primary p-2 w-full text-white rounded-2xl;
+}
